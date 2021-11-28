@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    background: rgb(249,246,237);
+    background: linear-gradient(90deg, rgba(249,246,237,1) 0%, rgba(249,224,182,1) 50%, rgba(237,216,173,1) 100%);
+}
+.getPokemon{
+    margin: 20px;
+    text-align: center;
+
+}
+.clickMe{
+    text-align: center;
+    position: relative;
+    top: 40px;
+    animation: clickme ease 1s infinite;
+}
+
+.poke-container{
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(172, 168, 168, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.img-container{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 50%;
+}
+.pokeCards{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    width: 150px;
+    height: auto;
+    min-width: 100px;
+    margin: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+.pokeCards h5{
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+.pokeId{
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    width: 25px;
+    border-radius: 10px;
+    top: 0;
+    left: -55px;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+.pokeType{
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(61, 58, 58);
+}
+.pokeBall{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #000;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 2s;
+}
+.pokeball-top{
+    background-color: red;
+    border-bottom: 1.5px solid #000;
+}
+.pokeball-bot,.pokeball-top{
+    height: 100%;
+}
+.pokeball-bot{
+    border-top: 1.5px solid #000;
+    background-color: #fff;
+}
+
+.pokeball-mid{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+@keyframes clickme{
+    0%{
+        top: 45px;
+    }
+    50%{
+        top: 50px;
+    } 
+    100%{
+        top: 45px;
+    }
+}
